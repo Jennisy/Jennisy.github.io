@@ -1,11 +1,28 @@
 <!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><meta name="keywords" content="null"><meta name="description" content="前端赶路中咸鱼"><meta name="author" content="Jennisy"><title>Jennisy博客</title><meta description="前端赶路中咸鱼"><meta property="og:type" content="website"><meta property="og:title" content="呢酱"><meta property="og:url" content="https://jennisy.github.io/"><meta property="og:site_name" content="呢酱"><meta property="og:description" content="前端赶路中咸鱼"><meta property="og:locale" content="zh_CN"><meta property="article:author" content="Jennisy"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://jennisy.github.io/img/avatar.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jennisy.github.io/"},"headline":"呢酱","image":["https://jennisy.github.io/img/avatar.png"],"author":{"@type":"Person","name":"Jennisy"},"description":"前端赶路中咸鱼"}</script><link rel="alternative" href="/atom.xml" title="Jennisy博客" type="application/atom+xml"><link rel="icon" href="/img/avatar.jpg"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="/css/style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><link rel="stylesheet" href="/live2d/waifu.css"><script type="text/javascript" async src="/live2d/autoload.js"></script></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/avatar.jpg" alt="Jennisy博客" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/jennisy"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2020-03-07  <span class="level-item"><i class="far fa-clock"> </i>3 分钟  <i class="fas fa-pencil-alt"> </i>0.4 k</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/03/07/js/es6/es6-Set-Map/">关于es6之Set和Map</a></h1><div class="content"><p>参考看文档 es6 (<a href="http://caibaojian.com/es6/set-map.html">http://caibaojian.com/es6/set-map.html</a>) (<a href="https://es6.ruanyifeng.com/#docs/symbol">https://es6.ruanyifeng.com/#docs/symbol</a>)</p>
-<h2 id="宏观认识"><a href="#宏观认识" class="headerlink" title="宏观认识"></a>宏观认识</h2><h3 id="set"><a href="#set" class="headerlink" title="set"></a>set</h3><p>类数组结构 但是成员的值都是唯一的，没有重复的值</p>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.0"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><meta name="keywords" content="null"><meta name="description" content="前端赶路中咸鱼"><meta name="author" content="Jennisy"><title>Jennisy博客</title><meta description="前端赶路中咸鱼"><meta property="og:type" content="website"><meta property="og:title" content="呢酱"><meta property="og:url" content="https://jennisy.github.io/"><meta property="og:site_name" content="呢酱"><meta property="og:description" content="前端赶路中咸鱼"><meta property="og:locale" content="zh_CN"><meta property="article:author" content="Jennisy"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://jennisy.github.io/img/avatar.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jennisy.github.io/"},"headline":"呢酱","image":["https://jennisy.github.io/img/avatar.png"],"author":{"@type":"Person","name":"Jennisy"},"description":"前端赶路中咸鱼"}</script><link rel="alternative" href="/atom.xml" title="Jennisy博客" type="application/atom+xml"><link rel="icon" href="/img/avatar.jpg"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro|Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;amp;subset=latin,latin-ext|Inconsolata|Itim|Lobster.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="/css/style.css"><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="/js/globalUtils.js"></script><link rel="stylesheet" href="/live2d/waifu.css"><script type="text/javascript" async src="/live2d/autoload.js"></script></head><body class="is-3-column has-navbar-fixed-top"><nav class="navbar navbar-main is-fixed-top"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/avatar.jpg" alt="Jennisy博客" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/jennisy"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme-setting.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2020-03-07  <span class="level-item"><i class="far fa-clock"> </i>3 分钟  <i class="fas fa-pencil-alt"> </i>0.4 k</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/03/07/js/es6/es6-Set-Map/">关于es6之Set和Map</a></h1><div class="content"><div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#hong-guan-ren-shi">宏观认识</a><ul>
+<li><a href="#set">set</a></li>
+<li><a href="#weakset">weakSet</a></li>
+<li><a href="#map">Map</a></li>
+<li><a href="#weakmap">weakMap</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+</div>
+参考看文档 es6 (http://caibaojian.com/es6/set-map.html) (https://es6.ruanyifeng.com/#docs/symbol)
+
+<h2><span id="hong-guan-ren-shi">宏观认识</span><a href="#hong-guan-ren-shi" class="header-anchor">#</a></h2><h3><span id="set">set</span><a href="#set" class="header-anchor">#</a></h3><p>类数组结构 但是成员的值都是唯一的，没有重复的值</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//常用于 做数组去重处理</span></span><br><span class="line"><span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(arr))</span><br><span class="line">[... new <span class="built_in">Set</span>(arr)]</span><br></pre></td></tr></table></figure>
 
-<h3 id="weakSet"><a href="#weakSet" class="headerlink" title="weakSet"></a>weakSet</h3><p><strong>弱引用<br>即垃圾回收机制不考虑WeakSet对该对象的引用</strong><br>也就是说，如果其他对象都不再引用该对象，那么垃圾回收机制会自动回收该对象所占用的内存，不考虑该对象还存在于WeakSet之中。这个特点意味着，无法引用WeakSet的成员，因此WeakSet是不可遍历的。<br>作用：暂时缓存 防止内存泄漏</p>
-<h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><p>类对象，但是键的类型不限于字符串<br>其实真正的健意义是<strong>内存地址绑定的</strong><br>即只要内存地址不一样，就是俩个键，=&gt; 解决了同名内容属性相同碰撞的问题</p>
-<h3 id="weakMap"><a href="#weakMap" class="headerlink" title="weakMap"></a>weakMap</h3><p>与Map 区别是只 接受对象和null做键名<br>弱引用</p>
+<h3><span id="weakset">weakSet</span><a href="#weakset" class="header-anchor">#</a></h3><p><strong>弱引用<br>即垃圾回收机制不考虑WeakSet对该对象的引用</strong><br>也就是说，如果其他对象都不再引用该对象，那么垃圾回收机制会自动回收该对象所占用的内存，不考虑该对象还存在于WeakSet之中。这个特点意味着，无法引用WeakSet的成员，因此WeakSet是不可遍历的。<br>作用：暂时缓存 防止内存泄漏</p>
+<h3><span id="map">Map</span><a href="#map" class="header-anchor">#</a></h3><p>类对象，但是键的类型不限于字符串<br>其实真正的健意义是<strong>内存地址绑定的</strong><br>即只要内存地址不一样，就是俩个键，=&gt; 解决了同名内容属性相同碰撞的问题</p>
+<h3><span id="weakmap">weakMap</span><a href="#weakmap" class="header-anchor">#</a></h3><p>与Map 区别是只 接受对象和null做键名<br>弱引用</p>
 <p>应用场景</p>
 <ul>
 <li><p>在网页的Dom元素上添加数据，使用weakMap。但dom被清除了，就没有对象应用weakMap了，而弱引用不会被垃圾回收机制认可为被weakMap引用了，<br>所以对应的weakMAp记录也会被自动移除<br>解决了内存泄漏</p>
@@ -13,8 +30,27 @@
 <li><p>部署私用属性<br>类的内部属性用weakMap，若删除实列，他们随之也会消失，不会造成内存泄漏</p>
 </li>
 </ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2020-03-06  <span class="level-item"><i class="far fa-clock"> </i>3 分钟  <i class="fas fa-pencil-alt"> </i>0.4 k</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/03/06/css/css-float/">关于清除浮动和BFC</a></h1><div class="content"><h2 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h2><p>清除浮动的本质：为了解决浮动子元素的父盒子高度为0的问题<br>希望能让内容浮动来撑开父盒子</p>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2020-03-06  <span class="level-item"><i class="far fa-clock"> </i>3 分钟  <i class="fas fa-pencil-alt"> </i>0.4 k</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/03/06/css/css-float/">关于清除浮动和BFC</a></h1><div class="content"><div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#qing-chu-fu-dong">清除浮动</a><ul>
+<li><a href="#fang-fa">方法</a></li>
+</ul>
+</li>
+<li><a href="#bfc-block-formatting-context">BFC(Block formatting context)</a><ul>
+<li><a href="#hong-fa-bfc-de-tiao-jian">触发BFC的条件</a></li>
+<li><a href="#te-dian-he-yong-tu">特点和用途</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h2><span id="qing-chu-fu-dong">清除浮动</span><a href="#qing-chu-fu-dong" class="header-anchor">#</a></h2><p>清除浮动的本质：为了解决浮动子元素的父盒子高度为0的问题<br>希望能让内容浮动来撑开父盒子</p>
+<h3><span id="fang-fa">方法</span><a href="#fang-fa" class="header-anchor">#</a></h3><ol>
 <li>clear:both<br>浮动盒子后添加一个空标签，给sytle</li>
 </ol>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"clear:both"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -27,8 +63,8 @@
 </ol>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1</span></span><br><span class="line"><span class="selector-class">.clearFix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">""</span>;</span><br><span class="line">    <span class="attribute">display</span>:block;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">0</span> ;</span><br><span class="line">    <span class="attribute">visibility</span>: hidden;</span><br><span class="line">    <span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//2</span></span><br><span class="line"><span class="selector-class">.clearFix</span><span class="selector-pseudo">:before</span>, <span class="selector-class">.clearFix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">""</span>;</span><br><span class="line">    <span class="attribute">display</span>:block</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">clear</span>:both</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">    *<span class="attribute">zoom</span>:<span class="number">1</span>  <span class="comment">//兼容ie 6 7</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="BFC-Block-formatting-context"><a href="#BFC-Block-formatting-context" class="headerlink" title="BFC(Block formatting context)"></a>BFC(Block formatting context)</h2><p>块级格式化上下文 独立渲染的区域<br>块级元素 display: block/list-iten/table</p>
-<h3 id="触发BFC的条件"><a href="#触发BFC的条件" class="headerlink" title="触发BFC的条件"></a>触发BFC的条件</h3><ul>
+<h2><span id="bfc-block-formatting-context">BFC(Block formatting context)</span><a href="#bfc-block-formatting-context" class="header-anchor">#</a></h2><p>块级格式化上下文 独立渲染的区域<br>块级元素 display: block/list-iten/table</p>
+<h3><span id="hong-fa-bfc-de-tiao-jian">触发BFC的条件</span><a href="#hong-fa-bfc-de-tiao-jian" class="header-anchor">#</a></h3><ul>
 <li><p>float不为none，即浮动元素</p>
 </li>
 <li><p>position absolute/fixed</p>
@@ -38,7 +74,7 @@
 <li><p>overflow的值不是visible(添加BFC常用：一般不会有副作用)</p>
 </li>
 </ul>
-<h3 id="特点和用途"><a href="#特点和用途" class="headerlink" title="特点和用途"></a>特点和用途</h3><ul>
+<h3><span id="te-dian-he-yong-tu">特点和用途</span><a href="#te-dian-he-yong-tu" class="header-anchor">#</a></h3><ul>
 <li><p>因为BFC 计算时会计算浮动的盒子的高度<br>所以 常用于 清除浮动</p>
 </li>
 <li><p>因为同一个BFC的两个相邻的Box会发生margin重叠<br>利用BFC避免margin重叠，如在其中一个盒子外包装多一个div即给新的BFC</p>
@@ -49,13 +85,31 @@
 </li>
 </ul>
 <p>参考<br><a href="https://blog.csdn.net/sinat_36422236/article/details/88763187">https://blog.csdn.net/sinat_36422236/article/details/88763187</a></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2020-03-06  <span class="level-item"><i class="far fa-clock"> </i>2 分钟  <i class="fas fa-pencil-alt"> </i>0.3 k</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/03/06/star-knowledge/">零星的知识点</a></h1><div class="content"><h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><p>css 三大特性：<br> 层叠： 覆盖作用<br> 继承： 继承字体 文本属性<br> 优先： 多指权重</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2020-03-06  <span class="level-item"><i class="far fa-clock"> </i>2 分钟  <i class="fas fa-pencil-alt"> </i>0.3 k</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/03/06/star-knowledge/">零星的知识点</a></h1><div class="content"><div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#css">css</a></li>
+<li><a href="#html-web-cun-chu">html - web存储</a><ul>
+<li><a href="#cookie">cookie</a></li>
+<li><a href="#storage">Storage</a></li>
+</ul>
+</li>
+<li><a href="#js-shu-ju-lei-xing">js数据类型</a></li>
+<li><a href="#symbol-biao-shi-zhi">symbol 标识值</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h2><span id="css">css</span><a href="#css" class="header-anchor">#</a></h2><p>css 三大特性：<br> 层叠： 覆盖作用<br> 继承： 继承字体 文本属性<br> 优先： 多指权重</p>
 <p> 权重 !important &gt; 行内样式 &gt; id &gt; class &gt; 标签 &gt; 继承样式的权重为0</p>
-<h2 id="html-web存储"><a href="#html-web存储" class="headerlink" title="html - web存储"></a>html - web存储</h2><p>在客户端存储数据</p>
-<h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><p>由于cookie，不适合大量数据存储，而且它们是由于每个对服务器的请求来传递的，速度慢且效率不高<br>cookie是浏览器提供的一种机制，cookie机制将信息存储于<kbd>用户硬盘</kbd><br>常用于： 保存用户登录状态 跟踪用户行为</p>
-<h3 id="Storage"><a href="#Storage" class="headerlink" title="Storage"></a>Storage</h3><p>localStorage 没有时间限制 第二天 一周 一年 依旧存在<br>sessionStorage  针对一个session 周期进行数据存储，当用户浏览器关闭，数据会被删除</p>
-<h2 id="js数据类型"><a href="#js数据类型" class="headerlink" title="js数据类型"></a>js数据类型</h2><p>由于原来的6种+es6 新引入的symbol，现在7种类型了<br>undefined，null boolean， string， number，object，symbol</p>
-<h2 id="symbol-标识值"><a href="#symbol-标识值" class="headerlink" title="symbol 标识值"></a>symbol 标识值</h2><p><a href="https://www.runoob.com/w3cnote/es6-symbol.html">es6/菜鸟教程</a></p>
+<h2><span id="html-web-cun-chu">html - web存储</span><a href="#html-web-cun-chu" class="header-anchor">#</a></h2><p>在客户端存储数据</p>
+<h3><span id="cookie">cookie</span><a href="#cookie" class="header-anchor">#</a></h3><p>由于cookie，不适合大量数据存储，而且它们是由于每个对服务器的请求来传递的，速度慢且效率不高<br>cookie是浏览器提供的一种机制，cookie机制将信息存储于<kbd>用户硬盘</kbd><br>常用于： 保存用户登录状态 跟踪用户行为</p>
+<h3><span id="storage">Storage</span><a href="#storage" class="header-anchor">#</a></h3><p>localStorage 没有时间限制 第二天 一周 一年 依旧存在<br>sessionStorage  针对一个session 周期进行数据存储，当用户浏览器关闭，数据会被删除</p>
+<h2><span id="js-shu-ju-lei-xing">js数据类型</span><a href="#js-shu-ju-lei-xing" class="header-anchor">#</a></h2><p>由于原来的6种+es6 新引入的symbol，现在7种类型了<br>undefined，null boolean， string， number，object，symbol</p>
+<h2><span id="symbol-biao-shi-zhi">symbol 标识值</span><a href="#symbol-biao-shi-zhi" class="header-anchor">#</a></h2><p><a href="https://www.runoob.com/w3cnote/es6-symbol.html">es6/菜鸟教程</a></p>
 <p>引入symbol的原因：唯一的标识，如若引入别人提供的对象，又想为对象添加新的方法(mixin模式)，<br>又要防止重名</p>
 <p><strong>作为属性名的symbol 不能用 点获取，只能用[]</strong></p>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><i class="far fa-calendar-plus"> </i>2020-03-05  <span class="level-item"><i class="far fa-clock"> </i>几秒  <i class="fas fa-pencil-alt"> </i>0.0 k</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/03/05/my-first-page/">逍遥</a></h1><div class="content"><p><img src="/img/xiaohs.png" alt=""></p>
